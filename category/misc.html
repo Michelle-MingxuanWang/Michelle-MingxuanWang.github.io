@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>823_assignment[D[C[D[D[D[D[D[D[D[D[D[D[D[ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[D[D[D[D[D[D[D[D[D - misc</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="823_assignment[D[C[D[D[D[D[D[D[D[D[D[D[D[ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[D[D[D[D[D[D[D[D[D Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">823_assignment[D[C[D[D[D[D[D[D[D[D[D[D[D[ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[D[D[D[D[D[D[D[D[D</a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/assignment-1.html">Assignment 1</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2021-09-03T00:00:00-05:00">
+                Published: Fri 03 September 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/mingxuan-wang.html">Mingxuan Wang</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info --><p>Problem1: sum_square_diff
+Using a loop to calculate the sum of the squares of the first one hundred natural numbers and use it to minus the square of the sum of the first one hundred natural numbers. 
+Then we have the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</p>
+<p>Problem2: coin_sums
+Using nested loops to traverse every possible combination of the coins. 
+If the combination can form to an amount of 2 pounds, the count of the combinations adds 1.
+In the "if" clause, the equations is "if a<em>100+b</em>50+c<em>20+d</em>10+e<em>5+f</em>2&lt;n+1" because if the total amount is less than 201, the amount can be added to 200 with any number of 1 pence coins.
+Moreover, the count of combinations starts from 1 because it includes the case of making 2 pounds with 200 pence.</p>
+<p>Problem3: concealed_square
+The minimum value of the integer is 1020304050607080900 and the maximum value of the integer is 19293949596979890.
+Therefore, let i, which is the number we need to find, starts from the square root of 10^18 to the square root of 2<em>10^18, which means it starts from 10^9 to the square root of 2</em>10^9.
+Since the last digit of the integer is 0, the stride in the loop is 10.
+Calculate the square of i, and using 'if' clause to constrain the value of some digits of the integer:
+Use 100 to divide i and calculate the remainder of the result being divided by 10, make the remainder equals to 9. 
+Use 10000 to divide i and calculate the remainder of the result being divided by 10, make the remainder equals to 8. 
+Similarly, constrains all the values of the digits according to the problem description.
+When we find the integer, we can break the loop, and return the unique positive integer that we need to find.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
