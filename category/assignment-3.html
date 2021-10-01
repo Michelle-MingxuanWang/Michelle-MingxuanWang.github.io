@@ -3,41 +3,35 @@
 <head>
         <meta charset="utf-8" />
         <meta name="generator" content="Pelican" />
-        <title>Assignment 1 notebook</title>
+        <title>823_assignment - Assignment 3</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="823_assignment Atom Feed" />
-        <meta name="description" content="Homework 1 - Mingxuan Wang¶Github Username: Michelle-MingxuanWang Github Repository:..." />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
                 <h1><a href="/">823_assignment</a></h1>
                 <nav><ul>
-                    <li class="active"><a href="/category/assignment-1.html">Assignment 1</a></li>
+                    <li><a href="/category/assignment-1.html">Assignment 1</a></li>
                     <li><a href="/category/assignment-2.html">Assignment 2</a></li>
-                    <li><a href="/category/assignment-3.html">Assignment 3</a></li>
+                    <li class="active"><a href="/category/assignment-3.html">Assignment 3</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/Assignment 1 notebook.html" rel="bookmark"
-           title="Permalink to Assignment 1 notebook">Assignment 1 notebook</a></h1>
-    </header>
 
-    <div class="entry-content">
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/Assignment 3.html">Assignment 3</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2021-09-02T00:00:00-04:00">
-                Published: Thu 02 September 2021
+        <abbr class="published" title="2021-10-01T00:00:00-04:00">
+                Published: Fri 01 October 2021
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="/author/mingxuan-wang.html">Mingxuan Wang</a>
         </address>
-<p>In <a href="/category/assignment-1.html">Assignment 1</a>.</p>
+<p>In <a href="/category/assignment-3.html">Assignment 3</a>.</p>
 
-</footer><!-- /.post-info -->      <style type="text/css">/*!
+</footer><!-- /.post-info --><style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1153,39 +1147,29 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
  .highlight pre  .vg { color: #19177C } /* Name.Variable.Global */
  .highlight pre  .vi { color: #19177C } /* Name.Variable.Instance */
  .highlight pre  .vm { color: #19177C } /* Name.Variable.Magic */
- .highlight pre  .il { color: #666666 } /* Literal.Number.Integer.Long */</style><body><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+ .highlight pre  .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Homework-1---Mingxuan-Wang">Homework 1 - Mingxuan Wang<a class="anchor-link" href="#Homework-1---Mingxuan-Wang">&#182;</a></h2><p>Github Username: Michelle-MingxuanWang<br>
+<h1 id="Homework-3---Mingxuan-Wang">Homework 3 - Mingxuan Wang<a class="anchor-link" href="#Homework-3---Mingxuan-Wang">&#182;</a></h1><p>Github Username: Michelle-MingxuanWang<br>
 Github Repository: <a href="https://github.com/Michelle-MingxuanWang/Michelle-MingxuanWang.github.io">https://github.com/Michelle-MingxuanWang/Michelle-MingxuanWang.github.io</a><br>
 Blog: <a href="https://michelle-mingxuanwang.github.io">https://michelle-mingxuanwang.github.io</a></p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Install-and-import-packages">Install and import packages<a class="anchor-link" href="#Install-and-import-packages">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 6, Solved by 496349</span>
-<span class="k">def</span> <span class="nf">sum_square_diff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    n : int</span>
-<span class="sd">        Number of the first several natural numbers.</span>
-<span class="sd">    i : int</span>
-<span class="sd">        Index of the number.</span>
-<span class="sd">        </span>
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    res : int</span>
-<span class="sd">         The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">))))</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="nb">sum</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)))</span> 
-    <span class="k">return</span> <span class="n">res</span>
-<span class="n">sum_square_diff</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">plotly</span>
 </pre></div>
 
     </div>
@@ -1198,15 +1182,16 @@ Blog: <a href="https://michelle-mingxuanwang.github.io">https://michelle-mingxua
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[166]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>25164150</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Requirement already satisfied: plotly in /opt/conda/lib/python3.7/site-packages (4.9.0)
+Requirement already satisfied: six in /opt/conda/lib/python3.7/site-packages (from plotly) (1.15.0)
+Requirement already satisfied: retrying&gt;=1.3.3 in /opt/conda/lib/python3.7/site-packages (from plotly) (1.3.3)
+Note: you may need to restart the kernel to use updated packages.
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -1215,37 +1200,27 @@ Blog: <a href="https://michelle-mingxuanwang.github.io">https://michelle-mingxua
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[161]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 31, Solved by 85886</span>
-<span class="k">def</span> <span class="nf">coin_sums</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    n : int</span>
-<span class="sd">        Total amount.</span>
-<span class="sd">    a, b, c, d, e, f : int</span>
-<span class="sd">        Number of the coins of each value</span>
-<span class="sd">    cnt : int</span>
-<span class="sd">        Number of different ways that the amount of money can be made using coins.  </span>
-<span class="sd">    </span>
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    cnt : int</span>
-<span class="sd">         Number of different ways that the amount of money can be made using coins.  </span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">cnt</span><span class="o">=</span><span class="mi">1</span>
-    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
-            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
-                <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">21</span><span class="p">):</span>
-                    <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">41</span><span class="p">):</span>
-                        <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
-                            <span class="k">if</span> <span class="n">a</span><span class="o">*</span><span class="mi">100</span><span class="o">+</span><span class="n">b</span><span class="o">*</span><span class="mi">50</span><span class="o">+</span><span class="n">c</span><span class="o">*</span><span class="mi">20</span><span class="o">+</span><span class="n">d</span><span class="o">*</span><span class="mi">10</span><span class="o">+</span><span class="n">e</span><span class="o">*</span><span class="mi">5</span><span class="o">+</span><span class="n">f</span><span class="o">*</span><span class="mi">2</span><span class="o">&lt;</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span>
-                                    <span class="n">cnt</span><span class="o">+=</span><span class="mi">1</span>
-    <span class="k">return</span> <span class="n">cnt</span>
-<span class="n">coin_sums</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">malaria_deaths_age</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-11-13/malaria_deaths_age.csv&quot;</span><span class="p">)</span>
+<span class="n">malaria_deaths_age</span>
 </pre></div>
 
     </div>
@@ -1258,13 +1233,141 @@ Blog: <a href="https://michelle-mingxuanwang.github.io">https://michelle-mingxua
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[161]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>73682</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>entity</th>
+      <th>code</th>
+      <th>year</th>
+      <th>age_group</th>
+      <th>deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1990</td>
+      <td>Under 5</td>
+      <td>184.606435</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1991</td>
+      <td>Under 5</td>
+      <td>191.658193</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1992</td>
+      <td>Under 5</td>
+      <td>197.140197</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1993</td>
+      <td>Under 5</td>
+      <td>207.357753</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Afghanistan</td>
+      <td>AFG</td>
+      <td>1994</td>
+      <td>Under 5</td>
+      <td>226.209363</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>30775</th>
+      <td>30776</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2012</td>
+      <td>50-69</td>
+      <td>103.185111</td>
+    </tr>
+    <tr>
+      <th>30776</th>
+      <td>30777</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2013</td>
+      <td>50-69</td>
+      <td>100.113293</td>
+    </tr>
+    <tr>
+      <th>30777</th>
+      <td>30778</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2014</td>
+      <td>50-69</td>
+      <td>99.013890</td>
+    </tr>
+    <tr>
+      <th>30778</th>
+      <td>30779</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2015</td>
+      <td>50-69</td>
+      <td>98.091738</td>
+    </tr>
+    <tr>
+      <th>30779</th>
+      <td>30780</td>
+      <td>Zimbabwe</td>
+      <td>ZWE</td>
+      <td>2016</td>
+      <td>50-69</td>
+      <td>97.402058</td>
+    </tr>
+  </tbody>
+</table>
+<p>30780 rows × 6 columns</p>
+</div>
 </div>
 
 </div>
@@ -1272,40 +1375,58 @@ Blog: <a href="https://michelle-mingxuanwang.github.io">https://michelle-mingxua
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Plot-1:-Deaths-over-the-Year-of-Each-Country">Plot 1: Deaths over the Year of Each Country<a class="anchor-link" href="#Plot-1:-Deaths-over-the-Year-of-Each-Country">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 206, Solved by 24163</span>
-<span class="c1">#Find the unique positive integer whose square has the form 1_2_3_4_5_6_7_8_9_0,</span>
-<span class="c1">#where each “_” is a single digit.</span>
-<span class="k">def</span> <span class="nf">concealed_square</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-<span class="sd">    i : int</span>
-<span class="sd">        The number we need to find.</span>
-<span class="sd">    sq : int</span>
-<span class="sd">        Square of the number.</span>
-<span class="sd">        </span>
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    i : int</span>
-<span class="sd">        The unique positive integer that we need to find.</span>
-<span class="sd">        </span>
-<span class="sd">    See Also</span>
-<span class="sd">    --------</span>
-<span class="sd">        np.sqrt : Calculate the square root of the number. </span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">9</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">10</span><span class="o">**</span><span class="mi">9</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
-        <span class="n">sq</span> <span class="o">=</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
-        <span class="k">if</span> <span class="n">sq</span><span class="o">//</span><span class="mi">100</span><span class="o">%</span><span class="k">10</span> == 9 and sq//10000%10 == 8 and sq//10**6%10 == 7 and sq//10**8%10 == 6 and sq//10**10%10 == 5 and sq//10**12%10 == 4 and sq//10**14%10 == 3 and sq//10**16%10 == 2:
-            <span class="k">break</span>
-    <span class="k">return</span> <span class="n">i</span>
-<span class="n">concealed_square</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">malaria_deaths_age_groupby_code</span> <span class="o">=</span> <span class="n">malaria_deaths_age</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;code&#39;</span><span class="p">,</span><span class="s1">&#39;year&#39;</span><span class="p">],</span><span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">year</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Play</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="mi">1990</span><span class="p">,</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">1990</span><span class="p">,</span>
+    <span class="nb">max</span><span class="o">=</span><span class="mi">2016</span><span class="p">,</span>
+    <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">interval</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Year:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+
+<span class="n">slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="mi">1990</span><span class="p">,</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">1990</span><span class="p">,</span>
+    <span class="nb">max</span><span class="o">=</span><span class="mi">2016</span><span class="p">,</span>
+    <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Year:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">continuous_update</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span>
+    <span class="n">readout</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">readout_format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span>
+<span class="p">)</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">jslink</span><span class="p">((</span><span class="n">year</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">),</span> <span class="p">(</span><span class="n">slider</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">malaria_deaths_age_groupby_code</span><span class="p">[</span><span class="n">malaria_deaths_age_groupby_code</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">year</span><span class="p">],</span> <span class="n">locations</span><span class="o">=</span><span class="s1">&#39;code&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;deaths&#39;</span><span class="p">,</span>
+                               <span class="n">color_continuous_scale</span><span class="o">=</span><span class="s2">&quot;reds&quot;</span><span class="p">,</span>
+                               <span class="n">range_color</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50000</span><span class="p">),</span>
+                               <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;deaths&#39;</span><span class="p">:</span><span class="s1">&#39;deaths&#39;</span><span class="p">}</span>
+                              <span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+<span class="n">out</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">interactive_output</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="n">year</span><span class="p">})</span>
+
+<span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">year</span><span class="p">,</span> <span class="n">slider</span><span class="p">]),</span> <span class="n">out</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -1318,24 +1439,173 @@ Blog: <a href="https://michelle-mingxuanwang.github.io">https://michelle-mingxua
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[165]:</div>
+    <div class="prompt"></div>
 
 
 
 
-<div class="output_text output_subarea output_execute_result">
-<pre>1389019170</pre>
+
+ 
+ 
+<div id="a0927e08-2c0a-4f40-9d9d-a80160e2ae3b"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#a0927e08-2c0a-4f40-9d9d-a80160e2ae3b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "512398af133b4771a169ddb77d4d2953", "version_major": 2, "version_minor": 0}
+</script>
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Plot-2:-Deaths-over-the-Years-for-Each-Country-in-Each-Age-Group">Plot 2: Deaths over the Years for Each Country in Each Age Group<a class="anchor-link" href="#Plot-2:-Deaths-over-the-Years-for-Each-Country-in-Each-Age-Group">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">entity</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">malaria_deaths_age</span><span class="p">[</span><span class="s1">&#39;entity&#39;</span><span class="p">]),</span>
+    <span class="n">value</span><span class="o">=</span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Entity:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">entity</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">malaria_deaths_age</span><span class="p">[</span><span class="n">malaria_deaths_age</span><span class="p">[</span><span class="s1">&#39;entity&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">entity</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;deaths&quot;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;age_group&quot;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">out</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">interactive_output</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;entity&#39;</span><span class="p">:</span> <span class="n">entity</span><span class="p">})</span>
+
+<span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">entity</span><span class="p">]),</span> <span class="n">out</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="52ab0a3d-1e0d-4475-8c5a-bea45b38e462"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#52ab0a3d-1e0d-4475-8c5a-bea45b38e462');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "36169eee3a704765be2f7d4fce060ff3", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Plot-3:-Pie-Chart-of-Deaths-for-Age-Groups-of-Each-Country">Plot 3: Pie Chart of Deaths for Age Groups of Each Country<a class="anchor-link" href="#Plot-3:-Pie-Chart-of-Deaths-for-Age-Groups-of-Each-Country">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">malaria_deaths_age_groupby_entity</span> <span class="o">=</span> <span class="n">malaria_deaths_age</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;entity&#39;</span><span class="p">,</span><span class="s1">&#39;age_group&#39;</span><span class="p">],</span><span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">entity</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">malaria_deaths_age_groupby_entity</span><span class="p">[</span><span class="s1">&#39;entity&#39;</span><span class="p">]),</span>
+    <span class="n">value</span><span class="o">=</span><span class="s1">&#39;Ethiopia&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Entity:&#39;</span><span class="p">,</span>
+    <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">entity</span><span class="p">):</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">malaria_deaths_age_groupby_entity</span><span class="p">[</span><span class="n">malaria_deaths_age_groupby_entity</span><span class="p">[</span><span class="s1">&#39;entity&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">entity</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;deaths&quot;</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;age_group&quot;</span><span class="p">,</span><span class="n">color_discrete_sequence</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">qualitative</span><span class="o">.</span><span class="n">Set3</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    
+<span class="n">out</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">interactive_output</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;entity&#39;</span><span class="p">:</span> <span class="n">entity</span><span class="p">})</span>
+
+<span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">entity</span><span class="p">]),</span> <span class="n">out</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="25c33b05-2c6d-429b-93ab-3bd3660515f5"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#25c33b05-2c6d-429b-93ab-3bd3660515f5');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c9c2c5752d4f45e9bccae2cd313bb884", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
 </div>
  
 
-</body>
+
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
@@ -1364,11 +1634,8 @@ Blog: <a href="https://michelle-mingxuanwang.github.io">https://michelle-mingxua
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 </script>
-
-    </div><!-- /.entry-content -->
-
-  </article>
-</section>
+                </article>
+            </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="social">
                         <h2>social</h2>
