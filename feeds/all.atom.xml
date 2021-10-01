@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>823_assignment</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2021-10-01T00:00:00-04:00</updated><subtitle></subtitle><entry><title>Assignment 3</title><link href="/Assignment%203.html" rel="alternate"></link><published>2021-10-01T00:00:00-04:00</published><updated>2021-10-01T00:00:00-04:00</updated><author><name>Mingxuan Wang</name></author><id>tag:None,2021-10-01:/Assignment 3.html</id><summary type="html">&lt;p&gt;Code of Assignment 3 in BIOSTAT 823&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>823_assignment</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2021-10-01T00:00:00-04:00</updated><subtitle></subtitle><entry><title>Assignment 3 Description</title><link href="/Assignment%203%20Description.html" rel="alternate"></link><published>2021-10-01T00:00:00-04:00</published><updated>2021-10-01T00:00:00-04:00</updated><author><name>Mingxuan Wang</name></author><id>tag:None,2021-10-01:/Assignment 3 Description.html</id><summary type="html">&lt;p&gt;Description of Assignment 3&lt;/p&gt;</summary><content type="html">&lt;p&gt;For plot 1, I draw a map plot for the deaths over the year in each entity
+In this plot, I want to show the deaths of each country on a map to clearly visualize the deaths in each entity
+Therefore, I use "choropleth" function in "plotly" package. 
+Moreover, I figure an animation widget will be suitable here to present the change of deaths over the year, so I use "Play" and "IntSlider" function in "widgets" package to create an animation.&lt;/p&gt;
+&lt;p&gt;For plot 2, I create a line plot of deaths over the years for each entityin each age group.
+I want to present the change of deaths over the year, and contrast the deaths of different age groups.
+So I use "line" function in "plotly" package to create a line plot, as "year" on the x-axis, "deaths" on the y-axis, and "age_group" as the color.
+Futhermore, I think specifying the entity will be helpful for the plot's interpretability, so I use "Dropdown" function in "widgets" package to make the plot interactive with choosing entities.&lt;/p&gt;
+&lt;p&gt;For plot 3, I make a pie chart of deaths for age groups of each country. 
+I want to show the different proportion of deaths in each age group, so I use "pie" function in "plotly" package.
+And I use "Dropdown" function in "widgets" package to make the chart interactive when choosing entities.&lt;/p&gt;</content><category term="Assignment 3"></category></entry><entry><title>Assignment 3</title><link href="/Assignment%203.html" rel="alternate"></link><published>2021-09-30T00:00:00-04:00</published><updated>2021-09-30T00:00:00-04:00</updated><author><name>Mingxuan Wang</name></author><id>tag:None,2021-09-30:/Assignment 3.html</id><summary type="html">&lt;p&gt;Code of Assignment 3 in BIOSTAT 823&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1415,10 +1425,10 @@ Note: you may need to restart the kernel to use updated packages.
 
  
  
-&lt;div id="500e85c0-39a7-4476-ab8f-65e49ea91d51"&gt;&lt;/div&gt;
+&lt;div id="7459a3cb-2a97-4eff-bf75-aa0fd6097122"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#500e85c0-39a7-4476-ab8f-65e49ea91d51');
+var element = $('#7459a3cb-2a97-4eff-bf75-aa0fd6097122');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "512398af133b4771a169ddb77d4d2953", "version_major": 2, "version_minor": 0}
@@ -1477,10 +1487,10 @@ var element = $('#500e85c0-39a7-4476-ab8f-65e49ea91d51');
 
  
  
-&lt;div id="53524f71-6eb4-4803-beec-58272749266d"&gt;&lt;/div&gt;
+&lt;div id="86e12d55-b08f-475b-8af9-4a962309faf2"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#53524f71-6eb4-4803-beec-58272749266d');
+var element = $('#86e12d55-b08f-475b-8af9-4a962309faf2');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "36169eee3a704765be2f7d4fce060ff3", "version_major": 2, "version_minor": 0}
@@ -1542,10 +1552,10 @@ var element = $('#53524f71-6eb4-4803-beec-58272749266d');
 
  
  
-&lt;div id="bef3efd9-5824-4801-894f-45b3c19c223c"&gt;&lt;/div&gt;
+&lt;div id="336d3303-172c-4055-aead-93c5b1703851"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#bef3efd9-5824-4801-894f-45b3c19c223c');
+var element = $('#336d3303-172c-4055-aead-93c5b1703851');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "c9c2c5752d4f45e9bccae2cd313bb884", "version_major": 2, "version_minor": 0}
@@ -1602,17 +1612,7 @@ var element = $('#bef3efd9-5824-4801-894f-45b3c19c223c');
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Assignment 3"></category></entry><entry><title>Assignment 3 Description</title><link href="/Assignment%203%20Description.html" rel="alternate"></link><published>2021-10-01T00:00:00-04:00</published><updated>2021-10-01T00:00:00-04:00</updated><author><name>Mingxuan Wang</name></author><id>tag:None,2021-10-01:/Assignment 3 Description.html</id><summary type="html">&lt;p&gt;Description of Assignment 3&lt;/p&gt;</summary><content type="html">&lt;p&gt;For plot 1, I draw a map plot for the deaths over the year in each entity
-In this plot, I want to show the deaths of each country on a map to clearly visualize the deaths in each entity
-Therefore, I use "choropleth" function in "plotly" package. 
-Moreover, I figure an animation widget will be suitable here to present the change of deaths over the year, so I use "Play" and "IntSlider" function in "widgets" package to create an animation.&lt;/p&gt;
-&lt;p&gt;For plot 2, I create a line plot of deaths over the years for each entityin each age group.
-I want to present the change of deaths over the year, and contrast the deaths of different age groups.
-So I use "line" function in "plotly" package to create a line plot, as "year" on the x-axis, "deaths" on the y-axis, and "age_group" as the color.
-Futhermore, I think specifying the entity will be helpful for the plot's interpretability, so I use "Dropdown" function in "widgets" package to make the plot interactive with choosing entities.&lt;/p&gt;
-&lt;p&gt;For plot 3, I make a pie chart of deaths for age groups of each country. 
-I want to show the different proportion of deaths in each age group, so I use "pie" function in "plotly" package.
-And I use "Dropdown" function in "widgets" package to make the chart interactive when choosing entities.&lt;/p&gt;</content><category term="Assignment 3"></category></entry><entry><title>Assignment 2 Description</title><link href="/Assignment%202%20Description.html" rel="alternate"></link><published>2021-09-19T00:00:00-04:00</published><updated>2021-09-19T00:00:00-04:00</updated><author><name>Mingxuan Wang</name></author><id>tag:None,2021-09-19:/Assignment 2 Description.html</id><summary type="html">&lt;p&gt;Write a function called 'pi_expan()'using evalf to convert the input number to to a floating-point approximation with n digits after the decimal point, then multiplies &lt;span class="math"&gt;\(10^n\)&lt;/span&gt;, truncate the integer part and convert it to a string.&lt;/p&gt;
+</content><category term="Assignment 3"></category></entry><entry><title>Assignment 2 Description</title><link href="/Assignment%202%20Description.html" rel="alternate"></link><published>2021-09-19T00:00:00-04:00</published><updated>2021-09-19T00:00:00-04:00</updated><author><name>Mingxuan Wang</name></author><id>tag:None,2021-09-19:/Assignment 2 Description.html</id><summary type="html">&lt;p&gt;Write a function called 'pi_expan()'using evalf to convert the input number to to a floating-point approximation with n digits after the decimal point, then multiplies &lt;span class="math"&gt;\(10^n\)&lt;/span&gt;, truncate the integer part and convert it to a string.&lt;/p&gt;
 &lt;p&gt;Then write a function called 'sliding_window()' to generate a list with slinding …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Write a function called 'pi_expan()'using evalf to convert the input number to to a floating-point approximation with n digits after the decimal point, then multiplies &lt;span class="math"&gt;\(10^n\)&lt;/span&gt;, truncate the integer part and convert it to a string.&lt;/p&gt;
 &lt;p&gt;Then write a function called 'sliding_window()' to generate a list with slinding windows. Using for loops to continuously truncate numbers of length k from the input number, and store the truncated number in the list.&lt;/p&gt;
 &lt;p&gt;Then write a function called 'is_prime()' to decide whether the number is prime or not:&lt;/p&gt;
