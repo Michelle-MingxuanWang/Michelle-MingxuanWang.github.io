@@ -1,3 +1,10 @@
+Title: Assignment 3 Description
+Slug: Assignment 3 Description
+Date: 10/1/2021
+Category: Assignment 3
+Author: Mingxuan Wang
+Summary: Description of Assignment 3
+
 
 For plot 1, I draw a map plot for the deaths over the year in each entity
 In this plot, I want to show the deaths of each country on a map to clearly visualize the deaths in each entity
