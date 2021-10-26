@@ -1425,10 +1425,10 @@ Note: you may need to restart the kernel to use updated packages.
 
  
  
-&lt;div id="7459a3cb-2a97-4eff-bf75-aa0fd6097122"&gt;&lt;/div&gt;
+&lt;div id="7ebf3793-689d-4499-b958-72b48f230cc9"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#7459a3cb-2a97-4eff-bf75-aa0fd6097122');
+var element = $('#7ebf3793-689d-4499-b958-72b48f230cc9');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "512398af133b4771a169ddb77d4d2953", "version_major": 2, "version_minor": 0}
@@ -1487,10 +1487,10 @@ var element = $('#7459a3cb-2a97-4eff-bf75-aa0fd6097122');
 
  
  
-&lt;div id="86e12d55-b08f-475b-8af9-4a962309faf2"&gt;&lt;/div&gt;
+&lt;div id="130e734f-15fc-4502-b565-4e822833aad9"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#86e12d55-b08f-475b-8af9-4a962309faf2');
+var element = $('#130e734f-15fc-4502-b565-4e822833aad9');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "36169eee3a704765be2f7d4fce060ff3", "version_major": 2, "version_minor": 0}
@@ -1552,10 +1552,10 @@ var element = $('#86e12d55-b08f-475b-8af9-4a962309faf2');
 
  
  
-&lt;div id="336d3303-172c-4055-aead-93c5b1703851"&gt;&lt;/div&gt;
+&lt;div id="c25f4b8b-d989-4ac9-8a63-067d98dc69dc"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_widget_view "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#336d3303-172c-4055-aead-93c5b1703851');
+var element = $('#c25f4b8b-d989-4ac9-8a63-067d98dc69dc');
 &lt;/script&gt;
 &lt;script type="application/vnd.jupyter.widget-view+json"&gt;
 {"model_id": "c9c2c5752d4f45e9bccae2cd313bb884", "version_major": 2, "version_minor": 0}
