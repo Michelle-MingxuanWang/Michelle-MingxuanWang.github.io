@@ -16,12 +16,69 @@
                     <li><a href="/category/assignment-2.html">Assignment 2</a></li>
                     <li><a href="/category/assignment-3.html">Assignment 3</a></li>
                     <li><a href="/category/assignment-4.html">Assignment 4</a></li>
+                    <li><a href="/category/assignment-5.html">Assignment 5</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/Assignment 4 Description.html">Assignment 4 Description</a></h1>
+                    <h1 class="entry-title"><a href="/Assignment 5 Description.html">Assignment 5 Description</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2021-11-15T00:00:00-05:00">
+                Published: Mon 15 November 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/mingxuan-wang.html">Mingxuan Wang</a>
+        </address>
+<p>In <a href="/category/assignment-5.html">Assignment 5</a>.</p>
+
+</footer><!-- /.post-info --><p>I uploaded the zip picture file into the container and extract them with "zipfile". 
+Then, I load the training and testing set using "tf.keras.utils.image_dataset_from_directory" and convert pictures to arrays using "np.concatenate". 
+In order to train a cnn model, I normalize the X_train and X_test.</p>
+<p>To have a look at a single picture and its lable in the dataset, I write a function called "plot_sample" using matplotlib.</p>
+<p>Then, train the convolutional neural network to classify the images. Using two convolution and two max pooling layers. 
+The number of output filters in the convolution is set to be 32 and 64. Kernel size is 3 by 3. Using 'relu' as the activation function. 
+For the dense layer, 'relu' and 'softmax' are used as the activation function. 
+Then compile the cnn using 'sparse_categorical_crossentropy' as loss.</p>
+<p>Then, fit the model on the training set, set epochs to be 10.
+The accuracy is 99.9%. According to the confusion matrix, all the 180 samples are classified correctly.</p>
+<p>Using SHAP to explain the deep learning model. Select 4 background examples and explain the predictions of model by plotting the feature attributions.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Assignment 5.html" rel="bookmark"
+                           title="Permalink to Assignment 5 Notebook">Assignment 5 Notebook</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-11-14T00:00:00-05:00">
+                Published: Sun 14 November 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/mingxuan-wang.html">Mingxuan Wang</a>
+        </address>
+<p>In <a href="/category/assignment-5.html">Assignment 5</a>.</p>
+
+</footer><!-- /.post-info -->                <p>Codeof Assignment 5 in BIOSTAT 823</p>
+                <a class="readmore" href="/Assignment 5.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Assignment 4 Description.html" rel="bookmark"
+                           title="Permalink to Assignment 4 Description">Assignment 4 Description</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2021-10-25T00:00:00-04:00">
                 Published: Mon 25 October 2021
@@ -32,23 +89,10 @@
         </address>
 <p>In <a href="/category/assignment-4.html">Assignment 4</a>.</p>
 
-</footer><!-- /.post-info --><p>I chose the dataset 6, "Doctorates awarded, by state or location, broad field of study, and sex of doctorate recipients: 2017".  </p>
-<p>Firstly, I read the dataset while assigning both the first row and the second row as a multi-index and reform the dataset so it can be used to create a dashboard.<br>
-I Insert a column contains the correspond state code of the states in order to draw the choropleth map.  Moreover, I stacke the dataframe and transformed the formation of the dataframe, then replace the "D" value in the dataset as NaN.  </p>
-<p>Then, I do some analysis in Pandas. I calculate the total num of doctorates awarded in different states, field, and print the top 5 states and the top 5 fields with the highest doctorates awarded. <br>
-Moreover, I calculate the proportion of doctorates awarded of male and female. <br>
-What's more, I calculate the ratio of female doctorates awarded and male doctorates awarded among all the field, and find that Education has the highest female to male ratio, Engineering has the lowest female to male ratio.  </p>
-<p>Then, I create a dashboard in Dash in plotly. <br>
-By using "px.choropleth" in "dcc.Graph", I draw the choropleth map of the total doctorates awarded in all the 51 states on the map of United States.<br>
-By using "dcc.Dropdown", and "px.bar" and "px.pie" in "dcc.Graph", I create two plots with dropdowns.  The dropdown is useful because it enables the users to choose the feature that they are interested in and add interaction to the dashboard.
-The dropdown is linked to the bar plot and the pie plot by using "callback".
-Moreover, I add a "hoverData" function to the dashboard. This means that when the user hovers their mouse on the a certain state in the choropleth map,  the corrspond par plot and pie plot of that certain state will be drawn. <br>
-This is another way to add interaction to the dashboard.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+</footer><!-- /.post-info -->                <p>Description of Assignment 4</p>
+                <a class="readmore" href="/Assignment 4 Description.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>

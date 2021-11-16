@@ -3,10 +3,10 @@
 <head>
         <meta charset="utf-8" />
         <meta name="generator" content="Pelican" />
-        <title>Assignment 3 Description</title>
+        <title>Assignment 5 Description</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="823_assignment Atom Feed" />
-        <meta name="description" content="Description of Assignment 3" />
+        <meta name="description" content="Description of Assignment 5" />
 </head>
 
 <body id="index" class="home">
@@ -15,41 +15,41 @@
                 <nav><ul>
                     <li><a href="/category/assignment-1.html">Assignment 1</a></li>
                     <li><a href="/category/assignment-2.html">Assignment 2</a></li>
-                    <li class="active"><a href="/category/assignment-3.html">Assignment 3</a></li>
+                    <li><a href="/category/assignment-3.html">Assignment 3</a></li>
                     <li><a href="/category/assignment-4.html">Assignment 4</a></li>
-                    <li><a href="/category/assignment-5.html">Assignment 5</a></li>
+                    <li class="active"><a href="/category/assignment-5.html">Assignment 5</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/Assignment 3 Description.html" rel="bookmark"
-           title="Permalink to Assignment 3 Description">Assignment 3 Description</a></h1>
+        <a href="/Assignment 5 Description.html" rel="bookmark"
+           title="Permalink to Assignment 5 Description">Assignment 5 Description</a></h1>
     </header>
 
     <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2021-10-01T00:00:00-04:00">
-                Published: Fri 01 October 2021
+        <abbr class="published" title="2021-11-15T00:00:00-05:00">
+                Published: Mon 15 November 2021
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="/author/mingxuan-wang.html">Mingxuan Wang</a>
         </address>
-<p>In <a href="/category/assignment-3.html">Assignment 3</a>.</p>
+<p>In <a href="/category/assignment-5.html">Assignment 5</a>.</p>
 
-</footer><!-- /.post-info -->      <p>For plot 1, I draw a map plot for the deaths over the year in each entity
-In this plot, I want to show the deaths of each country on a map to clearly visualize the deaths in each entity
-Therefore, I use "choropleth" function in "plotly" package. 
-Moreover, I figure an animation widget will be suitable here to present the change of deaths over the year, so I use "Play" and "IntSlider" function in "widgets" package to create an animation.</p>
-<p>For plot 2, I create a line plot of deaths over the years for each entityin each age group.
-I want to present the change of deaths over the year, and contrast the deaths of different age groups.
-So I use "line" function in "plotly" package to create a line plot, as "year" on the x-axis, "deaths" on the y-axis, and "age_group" as the color.
-Futhermore, I think specifying the entity will be helpful for the plot's interpretability, so I use "Dropdown" function in "widgets" package to make the plot interactive with choosing entities.</p>
-<p>For plot 3, I make a pie chart of deaths for age groups of each country. 
-I want to show the different proportion of deaths in each age group, so I use "pie" function in "plotly" package.
-And I use "Dropdown" function in "widgets" package to make the chart interactive when choosing entities.</p>
+</footer><!-- /.post-info -->      <p>I uploaded the zip picture file into the container and extract them with "zipfile". 
+Then, I load the training and testing set using "tf.keras.utils.image_dataset_from_directory" and convert pictures to arrays using "np.concatenate". 
+In order to train a cnn model, I normalize the X_train and X_test.</p>
+<p>To have a look at a single picture and its lable in the dataset, I write a function called "plot_sample" using matplotlib.</p>
+<p>Then, train the convolutional neural network to classify the images. Using two convolution and two max pooling layers. 
+The number of output filters in the convolution is set to be 32 and 64. Kernel size is 3 by 3. Using 'relu' as the activation function. 
+For the dense layer, 'relu' and 'softmax' are used as the activation function. 
+Then compile the cnn using 'sparse_categorical_crossentropy' as loss.</p>
+<p>Then, fit the model on the training set, set epochs to be 10.
+The accuracy is 99.9%. According to the confusion matrix, all the 180 samples are classified correctly.</p>
+<p>Using SHAP to explain the deep learning model. Select 4 background examples and explain the predictions of model by plotting the feature attributions.</p>
     </div><!-- /.entry-content -->
 
   </article>
